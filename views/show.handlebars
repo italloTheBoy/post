@@ -1,0 +1,18 @@
+<fieldset>
+  <legend>
+    <h1>Posts</h1>
+  </legend>
+
+  {{#each post}}
+    <h2>{{dataValues.title}}</h2>
+    <p>{{dataValues.content}}</p>
+    <a href="/deletePost/{{dataValues.id}}">
+      <button>Delete</button>
+    </a>
+    <hr>
+  {{/each}}
+
+  <a href="/post">
+    <button>Fazer postagem</button>
+  </a>
+</fieldset>
